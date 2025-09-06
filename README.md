@@ -2,10 +2,12 @@
 
 A comprehensive real-time portfolio dashboard built with Next.js, React, TypeScript, and TailwindCSS that displays stock holdings with live updates for Current Market Price (CMP), P/E ratio, and earnings data from Yahoo Finance and Google Finance.
 
+link of the hosted app: https://stock-managment-dashboard.vercel.app/
+This code fetches failed errors but the other one doesnt fetch errors which has everything fixed from a to z and we couldnt do the vercel deploy and u can see the api failed errors and can go through the images provided below and link of the updated files and folders with all bugs and changes fixed in is here : https://github.com/Adiytisuman24/Stock-managment-dashboard
 ## 🚀 Features
 
 ### Core Functionality
-- **Real-time Stock Data**: Live updates every 15 seconds from Yahoo Finance and Google Finance
+- **Real-time Stock Data**: Live updates every 15 seconds from Yahoo Finance or Google Finance
 - **Comprehensive Portfolio Table**: All columns as specified including Particulars, Purchase Price, Quantity, Investment, Portfolio %, NSE/BSE, CMP, Present Value, Gain/Loss, P/E Ratio, and Latest Earnings
 - **Sector Grouping**: Organize holdings by sector with detailed summaries
 - **Excel Import**: Upload and parse portfolio data from Excel files
@@ -118,7 +120,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ```
 
 ## 🔌 API Integration
-## API keys are already added so u dont need to create one unless the credits with serp api has been gone due to free credits given by google finance api keys.
+
 ### SerpAPI Google Finance Integration
 ```typescript
 import { getSerpApiClient } from '@/lib/serpapi-client';
@@ -140,6 +142,7 @@ const quotes = await yahooFinance.quote(['HDFCBANK.NS', 'RELIANCE.NS']);
 - 15-second cache duration to prevent API abuse
 - Batched requests for multiple symbols
 - Graceful error handling with fallback data
+****for now u dont have to change any api key as it is public yahoo and google finance api keys that runs smoothly on this platform so just download the api key and enjoy the portfolio managment upto 1000 credits and after that u can use ur own api keys and then use it up.
 
 ## 🔑 API Configuration
 
@@ -288,7 +291,7 @@ YAHOO_FINANCE_API_KEY=your_key_here
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-##  License
+## 📄 License
 
 This project is for educational and demonstration purposes. Please ensure compliance with data provider terms of service when using real APIs.
 
@@ -299,19 +302,11 @@ For support and questions:
 - Review the documentation
 - Ensure all dependencies are properly installed
 
----Images given :
-<img width="1877" height="938" alt="Screenshot 2025-07-18 114241" src="https://github.com/user-attachments/assets/a1e923c2-6929-4ec4-a36f-9f98963aae6c" />
-<img width="1911" height="1026" alt="Screenshot 2025-
-07-18 114258" src="https://github.com/user-attachments/assets/2a50ac71-4ec1-46e3-8222-dbbd8c89b22f" />
-<img width="1919" height="1025" alt="Screenshot 2025-07-18 114308" src="https://github.com/user-attachments/assets/6ab1a6e4-0a65-4542-b2c4-50f5a3dacc97" />
-<img width="1916" height="1030" alt="Screenshot 2025-07-18 114317" src="https://github.com/user-attachments/assets/7afd648a-875f-4aa3-a02e-cea4097aa52f" />
-<img width="1914" height="990" alt="Screenshot 2025-07-18 114327" src="https://github.com/user-attach
-ments/assets/cc80fb74-5581-4b9b-abc6-51cfb825d95c" />
-<img width="1919" height="1025" alt="Screenshot 2025-07-18 114308" src="https://github.com/user-attachments/assets/a3c1d389-9f63-4c7a-b014-88498ddc792d" />
-<img width="1910" height="1017" alt="Screenshot 2025-07-18 114335" src="https://github.com/user-attachments/assets/988bbd72-27bc-4540-8ec3-bcb7cddf7ccc" />
+---
+Photos and supporting images for the same
+<img width="1840" height="881" alt="Screenshot 2025-07-15 212226" src="https://github.com/user-attachments/assets/8c99e696-53fa-4628-a6d2-99f978918ef7" />
+<img width="1858" height="886" alt="Screenshot 2025-07-15 212122" src="https://github.com/user-attachments/assets/6f97f178-14fb-44d5-9a3f-c68c22739567" />
+<img width="1884" height="593" alt="Screenshot 2025-07-15 212148" src="https://github.com/user-attachments/assets/c91c4517-6ad0-4148-a7cf-d232326ad6d7" />
+<img width="1874" height="946" alt="Screenshot 2025-07-15 212208" src="https://github.com/user-attachments/assets/71d555a1-721c-4bd1-a3f8-2bcaa8bd2cf5" />
 
-
-
-**Disclaimer**: This application is for educational purposes only. Stock prices and financial data are indicative and should not be used for actual investment decisions. Always consult with financial advisors and verify data with official sources before making investment decisions.
-#   S t o c k - p o r t f o l i o - d a s h b o a r d - s u m a n  
- 
+**Disclaimer**: This application is for educational purposes only. Stock prices and financial data are indicative and should not be used for actual investment analysis. Always consult with financial advisors and verify data with official sources before making investment decisions.
